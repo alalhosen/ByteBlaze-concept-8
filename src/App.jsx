@@ -1,13 +1,11 @@
 import './App.css'
+import Home from './assets/pages/Home'
 
 function App() {
 
   return (
     <>
-      <h1 className="text-3xl font-bold text-center">
-        Hello world!
-      </h1>
-      <button className="btn">Button</button>
+  <Home></Home>
     </>
   )
 }
