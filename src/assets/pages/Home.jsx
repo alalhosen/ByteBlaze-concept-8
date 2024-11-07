@@ -1,7 +1,9 @@
+import Nav from "../../components/Nav";
+
 const Home = () => {
     return (
         <div>
-            <h3>Home page</h3>
+            <Nav></Nav>
         </div>
     );
 };
