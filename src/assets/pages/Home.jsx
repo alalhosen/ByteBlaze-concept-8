@@ -3,7 +3,9 @@ import Nav from "../../components/Nav";
 const Home = () => {
     return (
         <div>
-            <Nav></Nav>
+            <div className="h-16">
+                <Nav></Nav>
+            </div>
             <p>Home Page</p>
         </div>
     );
