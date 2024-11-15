@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 
 const Nav = () => {
 
@@ -18,7 +19,7 @@ const Nav = () => {
             setTheme('light')
         }
     }
-    console.log(theme);
+
     return (
         <div className="navbar bg-base-100 shadow-lg px-4 fixed z-10">
             <div className="flex-1">
@@ -26,8 +27,10 @@ const Nav = () => {
             </div>
             <div className="flex-none">
                 <ul className="menu menu-horizontal px-1">
-                    <li className="font-bold"><a>Home</a></li>
-                    <li className="font-bold text-primary" ><a>Blogs</a></li>
+                    <Link to='/' className="font-bold">
+                        Home</Link>
+                    <Link to='/blogs' className="font-bold text-primary">
+                        Blogs</Link>
                     <li className="font-bold"><a>Bookmarks</a></li>
                 </ul>
                 <label className="grid cursor-pointer place-items-center">
