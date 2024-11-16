@@ -2,7 +2,7 @@
 const Bookmarks = () => {
     return (
         <div>
-<p>Bookmarks page</p>            
+            <p>Bookmarks page</p>
         </div>
     );
 };

@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 const Nav = () => {
 
@@ -23,15 +23,26 @@ const Nav = () => {
     return (
         <div className="navbar bg-base-100 shadow-lg px-4 fixed z-10">
             <div className="flex-1">
-                <a className="btn btn-ghost gap-0 text-secondary normal-case text-2xl">Byte <span className="text-primary">Blaze</span></a>
+                <Link to='/' className="btn btn-ghost gap-0 text-secondary normal-case text-2xl">Byte <span className="text-primary">Blaze</span> </Link>
             </div>
-            <div className="flex-none">
-                <ul className="menu menu-horizontal px-1">
-                    <Link to='/' className="font-bold">
-                        Home</Link>
-                    <Link to='/blogs' className="font-bold text-primary">
+            <div className="flex-none gap-2">
+                <ul className="menu menu-horizontal px-1 hidden sm:flex items-center gap-5">
+                    <NavLink
+                        to='/' className={({ isActive }) => isActive ? 'text-primary font-bold' : 'font-bold'}>
+                        Home
+                    </NavLink>
+                    <NavLink
+                        to='/blogs' className={({ isActive }) => isActive ? 'text-primary font-bold' : 'font-bold'}>
+                        Blogs
+                    </NavLink>
+                    <NavLink
+                        to='/bookmarks' className={({ isActive }) => isActive ? 'text-primary font-bold' : 'font-bold'}>
+                        Bookmarks
+                    </NavLink>
+
+                    {/* <Link to='/blogs' className="font-bold text-primary">
                         Blogs</Link>
-                    <li className="font-bold"><a>Bookmarks</a></li>
+                    <li className="font-bold"><a>Bookmarks</a></li> */}
                 </ul>
                 <label className="grid cursor-pointer place-items-center">
                     <input

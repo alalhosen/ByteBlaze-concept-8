@@ -7,12 +7,11 @@ const MainLayout = () => {
     return (
         <div>
             <div className="h-16">
-            <Nav/>
-
-            <Home/>
-            <Blogs/>
-            <Bookmarks/>
+                <Nav />
             </div>
+            <Home />
+            <Blogs />
+            <Bookmarks />
         </div>
     );
 };
