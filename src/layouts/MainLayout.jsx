@@ -10,8 +10,9 @@ const MainLayout = () => {
             <div className="h-16">
                 <Nav />
             </div>
-          {/* pocket */}
-          <Outlet/>
+            
+            {/* pocket */}
+            <Outlet />
         </div>
     );
 };
