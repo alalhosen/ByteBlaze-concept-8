@@ -3,6 +3,7 @@ import { Outlet } from "react-router-dom";
 // import Bookmarks from "../assets/pages/Bookmarks";
 // import Home from "../assets/Pages/Home";
 import Nav from "../components/Nav";
+import Footer from "../components/Footer";
 
 const MainLayout = () => {
     return (
@@ -10,9 +11,11 @@ const MainLayout = () => {
             <div className="h-16">
                 <Nav />
             </div>
-            
-            {/* pocket */}
+
+            {/* packet */}
             <Outlet />
+            {/* footer */}
+            <Footer /> 
         </div>
     );
 };
