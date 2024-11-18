@@ -1,0 +1,16 @@
+<svg width="100%" height="150" xmlns="http://www.w3.org/2000/svg">
+  <rect x="45" y="18" width="175" height="45" style="stroke:green;fill:none;">
+    <animateMotion
+      path="M0,0 q60,100 100,0 q60,-20 100,0"
+      begin="0s"
+      dur="10s"
+      repeatCount="indefinite" />
+  </rect>
+  <text x="50" y="50" style="font-family:Verdana;font-size:32">ByteBlaze!
+    <animateMotion
+      path="M0,0 q60,100 100,0 q60,-20 100,0"
+      begin="0s"
+      dur="10s"
+      repeatCount="indefinite" />
+</text>
+</svg>
