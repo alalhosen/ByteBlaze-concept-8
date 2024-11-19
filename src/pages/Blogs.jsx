@@ -1,5 +1,14 @@
+import { useEffect, useState } from "react";
 
 const Blogs = () => {
+    
+    const [blogs,setBlogs]=useState([])
+    useEffect(()=>{
+        fetch('https://dev.to/api/articles?per_page=9&top=7')
+        .then(res=>res.json())
+        .then(data=>setBlogs(data))
+    },[])
+    console.log(blogs);
     return (
 <section className="dark:bg-gray-100 dark:text-gray-800">
 	<div className="container max-w-6xl p-6 mx-auto space-y-6 sm:space-y-12">
