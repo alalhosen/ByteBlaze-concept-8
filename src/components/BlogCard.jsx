@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 // eslint-disable-next-line no-unused-vars
 const BlogCard = ({ blog }) => {
-    const { cover_image, title, description, published_at } = blog
+    const { cover_image, title, description, published_at, id} = blog
     return (
         <Link to={`/blog/${id}`} className="max-w-sm mx-auto group transition border-2 hover:scale-105 border-primary hover:border-secondary border-opacity-30 hover:no-underline focus:no-underline dark:bg-gray-50">
             <img role="presentation" className="object-cover w-full rounded h-44 dark:bg-gray-500" src={cover_image} />
