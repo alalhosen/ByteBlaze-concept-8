@@ -5,12 +5,12 @@ import { Link } from "react-router-dom";
 const BlogCard = ({ blog }) => {
     const { cover_image, title, description, published_at, id} = blog
     return (
-        <Link to={`/blog/${id}`} className="max-w-sm mx-auto group transition border-2 hover:scale-105 border-primary hover:border-secondary border-opacity-30 hover:no-underline focus:no-underline dark:bg-gray-50">
-            <img role="presentation" className="object-cover w-full rounded h-44 dark:bg-gray-500" src={cover_image} />
-            <div className="p-6 space-y-2">
-                <h3 className="text-2xl font-semibold group-hover:underline group-focus:underline">In usu laoreet repudiare legendos</h3>
+        <Link to={`/blog/${id}`} className="border-2 border-primary hover:border-secondary dark:bg-gray-50 mx-auto border-opacity-30 max-w-sm hover:no-underline focus:no-underline transition group hover:scale-105">
+            <img role="presentation" className="dark:bg-gray-500 rounded w-full h-44 object-cover" src={cover_image} />
+            <div className="space-y-2 p-6">
+                <h3 className="font-semibold text-2xl group-hover:underline group-focus:underline">{title}</h3>
                 <span className="text-xs dark:text-gray-600">January 21, 2021</span>
-                <p>Mei ex aliquid eleifend forensibus, quo ad dicta apeirian neglegentur, ex has tantas percipit perfecto. At per tempor albucius perfecto, ei probatus consulatu patrioque mea, ei vocent delicata indoctum pri.</p>
+                <p>{description}</p>
             </div>
         </Link>
     );
