@@ -4,10 +4,10 @@ import waveTop from "../assets/waveTop.svg"
 const Home = () => {
     return (
         
-        <div className="flex flex-col relative items-center justify-center min-h-[calc(100vh-116px)]">
-            <img className="absolute top-0 h-1/3 w-full"  src={waveTop} alt="" />
+        <div className="relative flex flex-col justify-center items-center min-h-[calc(100vh-116px)]">
+            <img className="top-0 absolute w-full h-1/3"  src={waveTop} alt="" />
             <Hero />
-        <img className="absolute bottom-0 w-full h-2/5" src={wave} alt="" />
+        <img className="bottom-0 absolute w-full h-2/5" src={wave} alt="" />
         </div>
     );
 };
